@@ -75,24 +75,16 @@ input[type="checkbox"]{
  margin-right: 2%;
 }
 
-.profile-icon-preference > li {
-  display: inline-block;
+.insignias {
+  border: 2px solid lightblue;
+  height: 40vh;
 }
 
 .profile-pic {
-  margin-top: 10%;
-
+  border: 2px solid lightblue;
+  height: 40vh;
 }
 
-.profile-info {
-  margin-top: 20vh;
-
-}
-
-.post {
-  margin-top: 20%;
-
-}
 
 /*profile mobile*/
 .profile-pic-mobile {
@@ -113,4 +105,16 @@ input[type="checkbox"]{
 /*Nav*/
 i {
   margin-right: 50px;
+}
+
+ .logo-nav-mobile{
+   width: 40%;
+  height: 8vh;
+  }
+
+
+/*mapa*/
+.map {
+  width: 100%;
+height: 50vh;
 }
