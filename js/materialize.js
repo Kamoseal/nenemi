@@ -6,3 +6,6 @@ $(document).ready(function(){
 
   //menú collapse
 $(".button-collapse").sideNav();
+
+//menu dropdown
+$(".dropdown-button").dropdown();

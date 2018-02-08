@@ -9,21 +9,31 @@
     <title>Perfil</title>
   </head>
     <body>
-      <!--Menu navegación-->
+
+      <!--menu desplegable-->
+        <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">configuración</a></li>
+    <li><a href="#!">Pendiente</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Cerrar sesión</a></li>
+  </ul>
+  <!--Menu navegación-->
      <nav class="row">
-       <div class="nav-wrapper">
+       <div class="nav-wrapper deep-purple accent-2">
          <a href="#!" class="brand-logo">Logo</a>
          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
          <ul class="right hide-on-med-and-down">
-           <li><a href="sass.html"><i class="large material-icons">account_circle</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">apps</i></a></li>
+           <li><a href="profile.html"><i class="material-icons">account_circle</i></a></li>
+        <li><a href="menu.html"><i class="material-icons">apps</i></a></li>
+        <!--help lanza modal con instructivo-->
         <li><a href="collapsible.html"><i class="material-icons">help</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">settings</i></a></li>
+        <!--menu desplegable-->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">settings</i></a></li>
          </ul>
          <ul class="side-nav" id="mobile-demo">
            <li><a href="sass.html">Perfil</a></li>
            <li><a href="badges.html">Circuitos</a></li>
-           <li><a href="collapsible.html">Guía</a></li>
+           <li><a href="collapsible.html">Ayuda rápida</a></li>
            <li><a href="mobile.html">Cerrar sesión</a></li>
          </ul>
        </div>
