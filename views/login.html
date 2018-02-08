@@ -11,15 +11,15 @@
 </head>
 
 <body>
-  <!--clase desktop-->
-  <article class="login-back show-on-large hide-on-small-only">
+  <!---->
+  <article class="login-back">
     <section class="container">
       <div class="row">
         <div class="col l12 login">
           <form class="col l6 right teal lighten-4" action="#">
             <!--botón para ingresar con Google-->
             <div class="col l12 center google">
-              <a class="waves-effect waves-light btn" id="login"><img class="left google-icon" src="../assets/images/icono-google.png" alt=""> Ingresa con Google</a>
+              <a class="waves-effect waves-light btn deep-purple accent-2" id="login"><img class="left google-icon" src="../assets/images/icono-google.png" alt=""> Ingresa con Google</a>
             </div>
             <div class="input-field name-login">
               <input id="icon_prefix" type="text" class="validate">
@@ -29,48 +29,10 @@
               <input id="pass" type="password" class="validate">
               <label for="pass">Contraseña</label>
             </div>
-            <div class="input-field col l12">
-              <p class="center">
-                <input type="checkbox" id="test5" />
-                <label for="text5">Remember Me</label>
-              </p>
-            </div>
+            
             <!--activa modal para registrarse-->
             <div class="col l12 center">
-              <a class="modal-crea waves-effect waves-light btn modal-trigger" href="#modal1">Crea tu cuenta</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </article>
-  <!--clase mobile-->
-  <article class="login-back-mobile hide-on-large-only">
-    <section class="container">
-      <div class="row">
-        <div class="col s12 login-mobile">
-          <form class="col s12 center teal lighten-4" action="#">
-            <!--botón para ingresar con Google-->
-            <div class="col s12 center google">
-              <a class="waves-effect waves-light btn" id="login"><img class="left google-icon" src="../assets/images/icono-google.png" alt=""> Ingresa con Google</a>
-            </div>
-            <div class="input-field name-login">
-              <input id="icon_prefix" type="text" class="validate">
-              <label for="icon_prefix">Usuario o correo electrónico</label>
-            </div>
-            <div class="input-field">
-              <input id="pass" type="password" class="validate">
-              <label for="pass">Contraseña</label>
-            </div>
-            <div class="input-field col s12">
-              <p class="center">
-                <input type="checkbox" id="test5" />
-                <label for="text5">Remember Me</label>
-              </p>
-            </div>
-            <!--activa modal para registrarse-->
-            <div class="col s12 center">
-              <a class="modal-crea waves-effect waves-light btn modal-trigger" href="#modal1">Crea tu cuenta</a>
+              <a class="modal-crea waves-effect waves-light btn modal-trigger deep-purple accent-2" href="#modal1">Crea tu cuenta</a>
             </div>
           </form>
         </div>
@@ -85,7 +47,7 @@
         <form class="col s12 m12 l12">
           <!---botón registrarse con Google-->
           <div class="col s12 m12 l12 center google">
-            <a class="waves-effect waves-light btn" id="btn-google"><img class="left google-icon" src="../assets/images/icono-google.png" alt=""> Ingresa con Google</a>
+            <a class="waves-effect waves-light btn deep-purple accent-2" id="btn-google"><img class="left google-icon" src="../assets/images/icono-google.png" alt=""> Ingresa con Google</a>
           </div>
           <div class="row">
             <div class="input-field col s12">
@@ -108,17 +70,17 @@
               <input placeholder="Confirma tu contraseña" id="password" type="text" class="validate">
               <label for="password"></label>
             </div>
-            <div class="col s3 modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-light btn">Crear</a>
+              <div class="col s3 modal-footer teal lighten-4 ">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn deep-purple accent-2">Crear</a>
             </div>
           </div>
         </form>
       </div>
     </div>
 
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
     <script>
       // Initialize Firebase
