@@ -1,6 +1,6 @@
 # Nenemi
 
-![](assets/images/logo-nenemi.png)
+![]()
 
 Porque Nenemi...
 
