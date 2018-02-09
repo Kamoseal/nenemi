@@ -80,7 +80,13 @@ input[type="checkbox"]{
   height: 40vh;
 }
 
+.container {
+  margin-top: 10vh;
+}
 
+.profile {
+
+}
 /*profile mobile*/
 .profile-pic-mobile {
   margin-left: 11%;
@@ -104,7 +110,7 @@ i {
 }
 
  .logo-nav-mobile{
-   width: 40%;
+   width: 30%;
   height: 8vh;
   }
 
