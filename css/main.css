@@ -142,3 +142,12 @@ height: 50vh;
 .img-menu-mobile {
   width: 100%;
 }
+
+
+.modal-content {
+  background-image: url("../assets/images/info-modal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
