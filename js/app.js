@@ -51,9 +51,6 @@ firebase.database().ref("nenemi")
 
 });
 
-
-window.onload = start;
-
 var photo = document.getElementById('upload');
 var storageRef;
 var img;
@@ -67,19 +64,16 @@ photo.addEventListener('change', uploadimg, false);
  // referecia a la base de datos
  img = firebase.database().ref().child("images");
  showImages();
+};
+start();
 
 function showImages(){
  img.on("value",function(snapshot){
     var datos = snapshot.val();
     for(var key in datos){
      var dataUrl = datos[key].url;
-
-     // var result = "<img width='200px'  + datos[key].url />";
    };
     result.innerHTML = "<img width='200px' src = '"+ dataUrl +"' />"
-
-
-    // document.getElementById('uploadPhoto').innerHTML = result;
  });
 };
 
@@ -97,19 +91,44 @@ function uploadimg() {
 }, function() {
  // Cuando se hasubido exitosamente
  var downloadURL = uploadTask.snapshot.downloadURL;
- console.log(downloadURL);
  // Crear nodo en base de datos firebaseio
  alert('foto subida con exito');
- crearNodoEnBDfirebase(imagenASubir.name, downloadURL);
+ crearNodoEnBDfirebase(imgUp.name, downloadURL);
  // document.getElementById('progress').className = hide;
 });
 };
 
 function crearNodoEnBDfirebase(uploadTask, downloadURL){
- imagenes.push({ nombre:uploadTask, url:downloadURL})
+ img.push({ nombre:uploadTask, url:downloadURL})
 };
 
+// Hacer posts
+var $textarea = $('#textarea1');
+var $btn = $("#addPublish");
+
+$(document).ready(function() {
+  $btn.click(publish);
+});
+
+var publish = function(e) {
+  e.preventDefault();
+  var $text = $('#textarea1').val();
+  paintPublish($text);
 };
+
+var paintPublish = function($text) {
+  var $container = $('<div class="row"> </div>');
+  var $div = $('<div class="col s4 col m6 col l12 center published"></div>');
+  var $p = $("<p id='text'></p>");
+
+  $p.text($text);
+  $container.append($div);
+  $container.append($p);
+  $("#print").prepend($container);
+
+  $("#textarea1").val('');
+};
+
 function findMe(){
   var output = document.getElementById("map");
 

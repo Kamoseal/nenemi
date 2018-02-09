@@ -1,6 +1,5 @@
 var usuario = localStorage.getItem('usuario');
 usuario= JSON.parse(usuario)
-console.log(usuario);
 
 
 firebase.database().ref("user/" + usuario.uid).set(usuario);
