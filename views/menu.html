@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Menu</title>
+  </head>
+    <body class="grey lighten-4">
+      <!--menu desplegable-->
+        <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">configuración</a></li>
+    <li><a href="#!">Pendiente</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Cerrar sesión</a></li>
+  </ul>
+  <!--Menu navegación-->
+     <nav class="">
+       <div class="nav-wrapper #ab47bc purple lighten-1">
+         <a href="#!" class=""> <img class="logo-nav-mobile " src="../assets/images/logo-nav.png" alt=""> </a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="profile.html"><i class="material-icons">account_circle</i></a></li>
+        <li><a href="menu.html"><i class="material-icons">apps</i></a></li>
+        <!--help lanza modal con instructivo-->
+        <li><a href="collapsible.html"><i class="material-icons">help</i></a></li>
+        <!--menu desplegable-->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">settings</i></a></li>
+         </ul>
+         <ul class="side-nav" id="mobile-demo">
+           <li><a href="profilr.html">Perfil</a></li>
+           <li><a href="menu.html">Circuitos</a></li>
+           <li><a href="collapsible.html">Ayuda rápida</a></li>
+           <li><a href="mobile.html">Cerrar sesión</a></li>
+         </ul>
+       </div>
+     </nav>
+     <section class="container view-menu hide-on-small-only">
+        <div class="row col 12l center">
+          <div class="col 3l">
+          <a href="cto-tech.html"><img class="img-menu responsive-img" src="../assets/images/menu-tech.jpg" alt=""></a>
+        </div>
+          <div class="col 3l">
+            <a href="cto-entret.html"><img class="img-menu responsive-img" src="../assets/images/menu-entret.jpg" alt=""></a>
+          </div>
+          <div class="col 3l">
+            <a href="cto-museum.html"><img class="img-menu responsive-img" src="../assets/images/menu-museos.jpg" alt=""></a>
+          </div>
+          <div class="col 3l">
+            <a href="cto-places.html"><img class="img-menu responsive-img" src="../assets/images/menu-places.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="row col 12l center">
+          <div class="col 3l">
+            <a href="cto-nat.html"><img class="img-menu responsive-img" src="../assets/images/menu-verdes.jpg" alt=""></a>
+          </div>
+          <div class="col 3l">
+            <a href="cto-trad.html"><img class="img-menu responsive-img" src="../assets/images/menu-trad.jpg" alt=""></a>
+          </div>
+          <div class="col 3l">
+            <a href="cto-rest.html"><img class="img-menu responsive-img" src="../assets/images/menu-rest.jpg" alt=""></a>
+          </div>
+          <div class="col 3l">
+            <a href="cto-bares.html"><img class="img-menu responsive-img" src="../assets/images/menu-bares.jpg" alt=""></a>
+          </div>
+        </div>
+     </section>
+<!--mobile-->
+     <section class="row mobile-menu show-on-small hide-on-large-only">
+       <div class="row">
+         <div class="col s12">
+           <div class="col s6">
+           <a href="cto-tech.html"><img class="img-menu responsive-img" src="../assets/images/menu-tech.jpg" alt=""></a>
+         </div>
+           <div class="col s6">
+             <a href="cto-entret.html"><img class="img-menu responsive-img" src="../assets/images/menu-entret.jpg" alt=""></a>
+           </div>
+       </div>
+       <div class="row">
+         <div class="col s12">
+           <div class="col s6">
+           <a href="cto-tech.html"><img class="img-menu responsive-img" src="../assets/images/menu-bares.jpg" alt=""></a>
+         </div>
+           <div class="col s6">
+             <a href="cto-entret.html"><img class="img-menu responsive-img" src="../assets/images/menu-rest.jpg" alt=""></a>
+           </div>
+       </div>
+       <div class="row">
+         <div class="col s12">
+           <div class="col s6">
+           <a href="cto-tech.html"><img class="img-menu responsive-img" src="../assets/images/menu-museos.jpg" alt=""></a>
+         </div>
+           <div class="col s6">
+             <a href="cto-entret.html"><img class="img-menu responsive-img" src="../assets/images/menu-places.jpg" alt=""></a>
+           </div>
+       </div>
+
+
+
+
+       </section>
+
+
+     </section>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+  </body>
+</html>

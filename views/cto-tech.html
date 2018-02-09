@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Tech</title>
+  </head>
+    <body class="black">
+      <!--menu desplegable-->
+        <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">configuración</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Cerrar sesión</a></li>
+  </ul>
+  <!--Menu navegación-->
+     <nav class="">
+       <div class="nav-wrapper #ab47bc purple lighten-1">
+         <a href="#!" class=""> <img class="logo-nav-mobile " src="../assets/images/logo-nav.png" alt=""> </a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="profile.html"><i class="material-icons">account_circle</i></a></li>
+        <li><a href="menu.html"><i class="material-icons">apps</i></a></li>
+        <!--help lanza modal con instructivo-->
+        <li><a href="collapsible.html"><i class="material-icons">help</i></a></li>
+        <!--menu desplegable-->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">settings</i></a></li>
+         </ul>
+         <ul class="side-nav" id="mobile-demo">
+           <li><a href="profilr.html">Perfil</a></li>
+           <li><a href="menu.html">Circuitos</a></li>
+           <li><a href="collapsible.html">Ayuda rápida</a></li>
+           <li><a href="mobile.html">Cerrar sesión</a></li>
+         </ul>
+       </div>
+     </nav>
+     <section class="container class="cto-tech ">
+        <section class="row tech-lab grey lighten-4">
+          <div class="col l8">
+            <!--Carousel-->
+            <div class=" hide-on-small-only carousel carousel-slider center" data-indicators="true">
+              <div class="carousel-fixed-item center">
+              </div>
+              <div class="carousel-item white white-text" href="#one!">
+                <!--Mapa completo-->
+                <img class="tech-map" src="../assets/images/tech-back.png" alt="">
+              </div>
+              <div class="carousel-item amber white-text" href="#two!">
+                <!--Laboratoria-->
+                <iframe class="col l6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.817927866134!2d-99.16319402173112!3d19.4202712275746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff41d4c73813%3A0xd1c6f4fcad149f54!2sLaboratoria+Coding!5e0!3m2!1ses!2smx!4v1518155549914" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6 img-carr " src="../assets/images/laboratoria.png" alt="">
+              </div>
+              <div class="carousel-item green white-text" href="#three!">
+                <!--Google-->
+                <iframe class="col l6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.633338705191!2d-99.20871998509338!3d19.428242086886733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f60a8f816b%3A0xca7e9b8e9149aac2!2sGoogle+M%C3%A9xico!5e0!3m2!1ses!2smx!4v1518155782657" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6 img-carr" src="../assets/images/google.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!--Checkbox-->
+          <form class="col l3 offset-l1" action="#">
+              <h5>CIRCUITO TECH</h5>
+              <p>
+                <input type="checkbox" id="test2" />
+                <label for="test2">Laboratoria</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test3" />
+                <label for="test3">Google</label>
+              </p>
+          </form>
+        </section>
+     </section>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+  </body>
+</html>

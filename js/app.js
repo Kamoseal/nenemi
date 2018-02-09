@@ -64,6 +64,7 @@ function start() {
 photo.addEventListener('change', uploadimg, false);
  // referencia a la raiz de storage
  storageRef = firebase.storage().ref();
+ console.log(storageRef);
  // referecia a la base de datos
  img = firebase.database().ref().child("images");
  showImages();

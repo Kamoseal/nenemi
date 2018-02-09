@@ -6,47 +6,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Museos</title>
+    <title>MUSEOS</title>
   </head>
-    <body>
-      <!--Menu navegación-->
-     <nav class="row">
-       <div class="nav-wrapper">
-         <a href="#!" class="brand-logo">Logo</a>
+    <body class="black">
+      <!--menu desplegable-->
+        <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">configuración</a></li>
+    <li><a href="#!">Pendiente</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Cerrar sesión</a></li>
+  </ul>
+  <!--Menu navegación-->
+     <nav class="">
+       <div class="nav-wrapper #ab47bc purple lighten-1">
+         <a href="#!" class=""> <img class="logo-nav-mobile " src="../assets/images/logo-nav.png" alt=""> </a>
          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
          <ul class="right hide-on-med-and-down">
-           <li><a href="sass.html">Sass</a></li>
-           <li><a href="badges.html">Components</a></li>
-           <li><a href="collapsible.html">Javascript</a></li>
-           <li><a href="mobile.html">Mobile</a></li>
+           <li><a href="profile.html"><i class="material-icons">account_circle</i></a></li>
+        <li><a href="menu.html"><i class="material-icons">apps</i></a></li>
+        <!--help lanza modal con instructivo-->
+        <li><a href="collapsible.html"><i class="material-icons">help</i></a></li>
+        <!--menu desplegable-->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">settings</i></a></li>
          </ul>
          <ul class="side-nav" id="mobile-demo">
-           <li><a href="sass.html">Sass</a></li>
-           <li><a href="badges.html">Components</a></li>
-           <li><a href="collapsible.html">Javascript</a></li>
-           <li><a href="mobile.html">Mobile</a></li>
+           <li><a href="sass.html">Perfil</a></li>
+           <li><a href="badges.html">Circuitos</a></li>
+           <li><a href="collapsible.html">Ayuda rápida</a></li>
+           <li><a href="mobile.html">Cerrar sesión</a></li>
          </ul>
        </div>
      </nav>
-     <!--circuito museos-->
-      <!--carrusel-->
-  <section>
-    <ul id="carousel" class="elastislide-list">
-	<li><a href="#"><img src="../assets/images/cto-mus-hist.jpg" alt="image01" /></a></li>
-	<li><a href="#"><img src="../assets/images/cto-mus-hist.jpg" alt="image02" /></a></li>
-	<li><a href="#"><img src="../assets/images/cto-mus-hist.jpg" alt="image03" /></a></li>
-	<!-- ... -->
-</ul>
-  </section>
-
-
-
-
-
-
-
-
-
+     <section class="container">
+        <section class="row tech-lab grey lighten-4">
+          <div class="col l8 ">
+            <!--Carousel-->
+            <div class=" hide-on-small-only carousel carousel-slider center" data-indicators="true">
+              <div class="carousel-fixed-item center">
+              </div>
+              <div class="carousel-item white-text" href="#one!">
+                <!--mapa-->
+                <img class="tech-map" src="../assets/images/museo-map.png" alt="">
+              </div>
+              <div class="carousel-item white-text" href="#two!">
+                <!--Bellas Artes-->
+                <iframe class="col l6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.461528726305!2d-99.14433355060727!3d19.43565829646335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x17d810d20da6e8cf!2sPalacio+de+Bellas+Artes!5e0!3m2!1ses-419!2smx!4v1518067126882" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6" src="../assets/images/azulejos.jpeg" alt="">
+              </div>
+              <div class="carousel-item amber white-text" href="#three!">
+                <!--MUNAL-->
+                <iframe class="col l6"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.2322295615681!2d-99.14051944938807!3d19.43553182814653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e67451bc487b600!2sMuseo+Nacional+De+Arte+MUNAL!5e0!3m2!1ses-419!2smx!4v1518067216109" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6" src="../assets/images/azulejos.jpeg" alt="">
+              </div>
+              <div class="carousel-item green white-text" href="#six!">
+                <!--Palacio de Iturbide-->
+                <iframe class="col l6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.2482876102238!2d-99.13891012397906!3d19.434145728937704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92cb2984203%3A0x1b2b0b0f98442534!2sPalacio+de+Cultura+Citibanamex%2C+Palacio+de+Iturbide!5e0!3m2!1ses-419!2smx!4v1518067328457" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6" src="../assets/images/azulejos.jpeg" alt="">
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <!--Estanquillo-->
+                <iframe class="col l6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.2517452390987!2d-99.13726861206192!3d19.433847260771575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x585a914fa52c2947!2sMuseo+del+Estanquillo!5e0!3m2!1ses-419!2smx!4v1518067379033" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6" src="../assets/images/azulejos.jpeg" alt="">
+              </div>
+              <div class="carousel-item blue white-text" href="#five!">
+                <!--Templo Mayor-->
+                <iframe class="col l6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.2542065747914!2d-99.13283223835126!3d19.43363479157345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c90beca651436b0!2sMuseo+del+Templo+Mayor!5e0!3m2!1ses-419!2smx!4v1518067430301" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="col l6" src="../assets/images/azulejos.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+          <form class="col l3 offset-l1" action="#">
+              <p>
+                <input type="checkbox" id="test1" />
+                <label for="test1">Bellas Artes</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test2" />
+                <label for="test2">Museo Nacional De Arte MUNAL</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test3" />
+                <label for="test3">Palacio de Cultura Citibanamex, Palacio de Iturbide</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test4" />
+                <label for="test4">Museo del Estanquillo</label>
+              </p>
+              <p>
+                <input type="checkbox" id="test5" />
+                <label for="test5">Museo del Templo Mayor</label>
+              </p>
+          </form>
+        </section>
+     </section>
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>

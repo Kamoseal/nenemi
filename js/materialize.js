@@ -9,3 +9,8 @@ $(".button-collapse").sideNav();
 
 //menu dropdown
 $(".dropdown-button").dropdown();
+
+//Carousel
+$(document).ready(function(){
+      $('.carousel').carousel();
+    });
