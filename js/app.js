@@ -129,29 +129,28 @@ var paintPublish = function($text) {
   $("#textarea1").val('');
 };
 
-function findMe(){
-  var output = document.getElementById("map");
 
-  //Verificar si soporta geolocalizacion
-  if (navigator.geolocation){
-    output.innerHTML="<p>Tu navegador soporta Geolalizacion</p>";
-  }else{
-    output.innerHTML="<p>Tu navegador no soporta Geolalizacion</p>";
+  var divMapa = document.getElementById("map");
+navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+function fn_mal( ) { }
+function fn_ok (rta){
+  var lat = rta.coords.latitude;
+  var lon = rta.coords.longitude;
+
+  var gLatLon = new google.maps.LatLng(lat, lon);
+  var objConfig = {
+    zoom:18,
+    center: gLatLon
+    }
+
+  var gMapa = new google.maps.Map(divMapa, objConfig);
+  var objConfigMarker = {
+    position: gLatLon,
+    map: gMapa
   }
-  //Obtener Latitud y Longitud
-  function location (position){
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-    console.log(latitude , longitude);
-  var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&zoom=20&size=1000x300&maptype=roadmap&markers=color:blue%7Clabel:"+latitude+","+longitude+"&key=AIzaSyCinGtoi4ad4P0JEDdIqDJ7g5nJegTs8aI"
-    console.log(imgURL);
-    output.innerHTML = "<img src ='"+imgURL+"'/>";
-  }
-  function error() {
-    output.innerHTML="<p>No se pudo obtener tu ubicación</p>";
-  }
-  navigator.geolocation.getCurrentPosition(location, error);
+  var gMarker = new google.maps.Marker(objConfigMarker);
 }
+
 $(function() {
 /*Define some constants */
 const ARTICLE_TITLE =  document.title;

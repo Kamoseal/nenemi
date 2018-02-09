@@ -145,6 +145,8 @@ height: 50vh;
 
 #map{
   margin: 3%;
+  height: 50vh;
+  width: 100vh;
 }
 
 /*share row buttons*/
