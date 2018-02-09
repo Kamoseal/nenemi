@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:title" 				content="Nenemi Perfil"/>
+    <meta name="twitter:description" 	content="Tu circuito en curso"/>
+    <meta name="twitter:image" 				content="https://girllollipop.github.io/nenemi/assets/images/logo-nav.png"/>
+    <meta name="twitter:site" 				content="@Nenemi Tech"/>
+    <meta name="twitter:creator" 			content="@Nenemi Tech"/>
+    <meta name="twitter:via" 					content="Nenemi Tech"/>
+    <meta name="twitter:card" 				content="photo"/>
+    <meta name="twitter:url" 					content="https://girllollipop.github.io/nenemi/views/profile.html"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
@@ -50,16 +58,33 @@
          <div class="">
            <p id="name"></p>
          </div>
-         <!--Insignias-->
+         <!--Insignias
        <div class="col s8 responsive-img right insignias">
 
        </div>
+       -->
      </section>
      <!-- Mapa Api-->
      <section class="row">
-       <div class="col s12 ">
-         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.132877161433!2d-99.15726207775681!3d19.421770240245745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1c6f4fcad149f54!2sLaboratoria+Coding!5e0!3m2!1ses-419!2smx!4v1518124935341" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
+       <!-- Buttons, Copy this to your Page Article -->
+<div class="share-buttons-row">
+
+ <!--Twitter's Button -->
+ <div class="share-twitter"></div>
+ <!--Facebook's Button -->
+ <div class="share-google-plus"></div>
+ <!--Linkedin's Button -->
+ <!--Facebook Button -->
+ <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://girllollipop.github.io/nenemi/views/profile.html#!layout=button&size=small&mobile_iframe=true&width=159&height=20&appId" width="159" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+ <!--Ubicacion Button -->
+ <button class="btn" onclick="findMe()">Mostrar ubicación</button>
+
+</div>
+      <div id="map" class="col s12">
+      </div>
+        <!--<div onload="findMe()" id="map" >
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.132877161433!2d-99.15726207775681!3d19.421770240245745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1c6f4fcad149f54!2sLaboratoria+Coding!5e0!3m2!1ses-419!2smx!4v1518124935341" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>-->
      </section>
 <!--input add pics-->
      <div class="row">
@@ -105,7 +130,8 @@
        </div>
      </div>
 
-
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCinGtoi4ad4P0JEDdIqDJ7g5nJegTs8aI"async defer></script>
    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
 <script>// Initialize Firebase

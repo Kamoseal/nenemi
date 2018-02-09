@@ -64,7 +64,6 @@ function start() {
 photo.addEventListener('change', uploadimg, false);
  // referencia a la raiz de storage
  storageRef = firebase.storage().ref();
- console.log(storageRef);
  // referecia a la base de datos
  img = firebase.database().ref().child("images");
  showImages();
@@ -111,3 +110,44 @@ function crearNodoEnBDfirebase(uploadTask, downloadURL){
 };
 
 };
+function findMe(){
+  var output = document.getElementById("map");
+
+  //Verificar si soporta geolocalizacion
+  if (navigator.geolocation){
+    output.innerHTML="<p>Tu navegador soporta Geolalizacion</p>";
+  }else{
+    output.innerHTML="<p>Tu navegador no soporta Geolalizacion</p>";
+  }
+  //Obtener Latitud y Longitud
+  function location (position){
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    console.log(latitude , longitude);
+  var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&zoom=20&size=1000x300&maptype=roadmap&markers=color:blue%7Clabel:"+latitude+","+longitude+"&key=AIzaSyCinGtoi4ad4P0JEDdIqDJ7g5nJegTs8aI"
+    console.log(imgURL);
+    output.innerHTML = "<img src ='"+imgURL+"'/>";
+  }
+  function error() {
+    output.innerHTML="<p>No se pudo obtener tu ubicación</p>";
+  }
+  navigator.geolocation.getCurrentPosition(location, error);
+}
+$(function() {
+/*Define some constants */
+const ARTICLE_TITLE =  document.title;
+const ARTICLE_URL = encodeURIComponent(window.location.href);
+const MAIN_IMAGE_URL = encodeURIComponent($('meta[property="og:image"]').attr('content'));
+
+$('.share-twitter').click(function(){
+  open_window('http://twitter.com/share?url='+ARTICLE_URL, 'twitter_share');
+});
+
+$('.share-google-plus').click(function(){
+  open_window('https://plus.google.com/share?url='+ARTICLE_URL, 'google_share');
+});
+
+function open_window(url, name){
+  window.open(url, name, 'height=320, width=640, toolbar=no, menubar=no, scrollbars=yes, resizable=yes, location=no, directories=no, status=no');
+}
+});
