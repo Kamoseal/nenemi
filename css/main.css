@@ -21,6 +21,10 @@ input[type="checkbox"]{
 
 
 /*view login desktop*/
+.logo-login > img{
+  width: 40%;
+}
+
 .login > form {
   height: auto;
   padding: 5%;
@@ -30,10 +34,10 @@ input[type="checkbox"]{
 }
 
 .login-back {
-  background-image: url("../assets/images/img-back-login.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-image: url("../assets/images/login-back-desktop.jpg");
 }
 
 .google {
@@ -65,15 +69,6 @@ input[type="checkbox"]{
   margin-right: 5%;
 }
 
-.profile {
- background-image: url("../assets/images/cover-profile.jpg");
- width: 95%;
- height: 40vh;
- background-size: cover;
- background-position: center;
- margin-left: 2%;
- margin-right: 2%;
-}
 
 .insignias {
   border: 2px solid lightblue;
@@ -101,6 +96,7 @@ input[type="checkbox"]{
 .modal-footer {
   margin-top: 2%:
 }
+
 
 /*Nav*/
 i {
